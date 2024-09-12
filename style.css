@@ -11,24 +11,67 @@ html {
   /*Percentage of user's browser font-size setting*/
   font-size: 62.5%;
 }
+.container {
+  height: 100vh;
+  padding: 0 18rem;
+  background-color: #000000;
+}
 
 .container .header-box .header-calculator {
   color: rgb(240, 131, 22);
   text-align: center;
-  margin-top: 1.5rem; /*20px*/
   font-size: 3.5rem; /*50px*/
   font-weight: 600;
+  padding-top: 2rem;
+  font-weight: 700;
 }
-
+.container .calculator-input-box {
+}
 .container .input-box {
-  display: flex;
-  justify-content: center;
+  display: block;
+  padding-top: 2.55rem;
+  color: white;
+  font-size: 8rem;
+  text-align: center;
+  padding-left: 37rem;
 }
 
 .calculator-input-box .calculator-inputs-grid {
   display: grid;
-  grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr;
+  grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr;
   font-size: 2rem;
-  font-weight: 600;
-  row-gap: 2rem;
+  row-gap: 1rem;
+  column-gap: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-input-box .calculator-inputs-grid .buttons-orange {
+  background-color: #ff9800;
+  color: #ffff;
+}
+
+.calculator-input-box .calculator-inputs-grid .buttons-grey {
+  background-color: #a7a6a7;
+}
+
+.calculator-input-box .calculator-inputs-grid .buttons {
+  background-color: #333333;
+  color: #ffff;
+}
+
+.calculator-input-box .calculator-inputs-grid .buttons,
+.calculator-input-box .calculator-inputs-grid .buttons-orange,
+.calculator-input-box .calculator-inputs-grid .buttons-grey {
+  width: 10rem;
+  height: 10rem;
+  font-size: 2.8rem;
+  border-radius: 100%;
+}
+
+.zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 0 11rem;
+  border-radius: 50rem !important;
 }
