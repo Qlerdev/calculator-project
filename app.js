@@ -22,5 +22,15 @@ function collectInputValue() {
   }
 }
 
-increase.addEventListener("click", () => {});
+deleteRecent.addEventListener("click", function dltrecent() {});
+deleteAll.addEventListener("click", function dltAll() {
+  inputvalue.length = 0; //reset ค่าใน array ให้เป็นค่าว่าง
+  displayInput.innerHTML = "";
+});
+increase.addEventListener("click", function increase() {});
+decrease.addEventListener("click", function decreasee() {});
+divide.addEventListener("click", function divide() {});
+multiply.addEventListener("click", function multiply() {});
+percent.addEventListener("click", function percent() {});
+
 collectInputValue();

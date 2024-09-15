@@ -28,13 +28,12 @@ html {
 .container .calculator-input-box {
 }
 .container .input-box {
-  display: block;
+  direction: ltr;
+  text-align: right;
   padding-top: 4rem;
   color: white;
   font-size: 8rem;
-  text-align: center;
-  padding-left: 37rem;
-  content: "";
+  padding-right: 36rem;
 }
 
 .calculator-input-box .calculator-inputs-grid {
